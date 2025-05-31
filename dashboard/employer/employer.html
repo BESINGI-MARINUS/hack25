@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Employer Dashboard - TechConnect CM</title>
+    <link rel="stylesheet" href="./employer.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="container">
+        <div class="header-content">
+          <div class="logo">
+            <div class="logo-icon">
+              <i class="fas fa-graduation-cap"></i>
+            </div>
+            <span class="logo-text">TechConnect CM</span>
+          </div>
+          <nav class="main-nav">
+            <ul>
+              <li>
+                <a href="dashboard-employer.html" class="active">Dashboard</a>
+              </li>
+              <li><a href="employer-jobs.html">My Jobs</a></li>
+              <li><a href="employer-candidates.html">Candidates</a></li>
+              <li><a href="employer-analytics.html">Analytics</a></li>
+              <li><a href="messages.html">Messages</a></li>
+            </ul>
+          </nav>
+          <div class="header-actions">
+            <button class="btn btn-primary">
+              <i class="fas fa-plus"></i>
+              Post Job
+            </button>
+            <button class="btn btn-ghost btn-sm">
+              <i class="fas fa-comment"></i>
+              Messages
+            </button>
+            <div class="avatar">
+              <img src="/placeholder.svg?height=32&width=32" alt="MTN" />
+              <span class="avatar-fallback">MT</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="container main-content">
+      <!-- Welcome Section -->
+      <div class="welcome-section">
+        <h1>Welcome back, TIC Foundation!</h1>
+        <p>Manage your hiring process and find the best talent</p>
+      </div>
+
+      <!-- Stats Cards -->
+      <div class="stats-grid">
+        <div class="stat-card">
+          <div class="stat-content">
+            <div class="stat-info">
+              <p class="stat-label">Active Jobs</p>
+              <p class="stat-value">8</p>
+            </div>
+            <div class="stat-icon blue">
+              <i class="fas fa-briefcase"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-content">
+            <div class="stat-info">
+              <p class="stat-label">Total Applications</p>
+              <p class="stat-value">156</p>
+              <p class="stat-trend positive">+23% this week</p>
+            </div>
+            <div class="stat-icon green">
+              <i class="fas fa-users"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-content">
+            <div class="stat-info">
+              <p class="stat-label">Profile Views</p>
+              <p class="stat-value">1,234</p>
+            </div>
+            <div class="stat-icon purple">
+              <i class="fas fa-eye"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-content">
+            <div class="stat-info">
+              <p class="stat-label">Hired This Month</p>
+              <p class="stat-value">5</p>
+            </div>
+            <div class="stat-icon orange">
+              <i class="fas fa-user-check"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Main Dashboard Grid -->
+      <div class="dashboard-grid">
+        <!-- Left Column -->
+        <div class="left-column">
+          <!-- Active Jobs -->
+          <div class="card">
+            <div class="card-header">
+              <div class="card-title-section">
+                <h3 class="card-title">
+                  <i class="fas fa-briefcase"></i>
+                  Active Job Postings
+                </h3>
+                <button class="btn btn-primary btn-sm">
+                  <i class="fas fa-plus"></i>
+                  Post New Job
+                </button>
+              </div>
+              <p class="card-description">Manage your current job listings</p>
+            </div>
+            <div class="card-content">
+              <div class="jobs-list">
+                <!-- Job 1 -->
+                <div class="job-item">
+                  <div class="job-info">
+                    <h4 class="job-title">Frontend Developer</h4>
+                    <div class="job-meta">
+                      <span class="job-type">Full-time</span>
+                      <span class="posted-date">Posted 2 days ago</span>
+                    </div>
+                    <div class="job-stats">
+                      <div class="stat-item">
+                        <i class="fas fa-users"></i>
+                        <span>45 applicants</span>
+                      </div>
+                      <div class="stat-item">
+                        <i class="fas fa-eye"></i>
+                        <span>234 views</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="job-actions">
+                    <span class="status-badge active">Active</span>
+                    <button class="btn btn-outline btn-sm">View</button>
+                  </div>
+                </div>
+
+                <!-- Job 2 -->
+                <div class="job-item">
+                  <div class="job-info">
+                    <h4 class="job-title">Backend Engineer</h4>
+                    <div class="job-meta">
+                      <span class="job-type">Full-time</span>
+                      <span class="posted-date">Posted 1 week ago</span>
+                    </div>
+                    <div class="job-stats">
+                      <div class="stat-item">
+                        <i class="fas fa-users"></i>
+                        <span>32 applicants</span>
+                      </div>
+                      <div class="stat-item">
+                        <i class="fas fa-eye"></i>
+                        <span>189 views</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="job-actions">
+                    <span class="status-badge active">Active</span>
+                    <button class="btn btn-outline btn-sm">View</button>
+                  </div>
+                </div>
+
+                <!-- Job 3 -->
+                <div class="job-item">
+                  <div class="job-info">
+                    <h4 class="job-title">Mobile Developer Intern</h4>
+                    <div class="job-meta">
+                      <span class="job-type">Internship</span>
+                      <span class="posted-date">Posted 3 days ago</span>
+                    </div>
+                    <div class="job-stats">
+                      <div class="stat-item">
+                        <i class="fas fa-users"></i>
+                        <span>28 applicants</span>
+                      </div>
+                      <div class="stat-item">
+                        <i class="fas fa-eye"></i>
+                        <span>156 views</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="job-actions">
+                    <span class="status-badge active">Active</span>
+                    <button class="btn btn-outline btn-sm">View</button>
+                  </div>
+                </div>
+              </div>
+              <div class="card-footer">
+                <button class="btn btn-outline full-width">
+                  View All Jobs
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Recent Applications -->
+          <div class="card">
+            <div class="card-header">
+              <h3 class="card-title">
+                <i class="fas fa-file-text"></i>
+                Recent Applications
+              </h3>
+              <p class="card-description">
+                Review and manage candidate applications
+              </p>
+            </div>
+            <div class="card-content">
+              <div class="applications-list">
+                <!-- Application 1 -->
+                <div class="application-item">
+                  <div class="candidate-info">
+                    <div class="candidate-avatar">
+                      <img
+                        src="/placeholder.svg?height=40&width=40"
+                        alt="John Doe"
+                      />
+                      <span class="avatar-fallback">JD</span>
+                    </div>
+                    <div class="candidate-details">
+                      <p class="candidate-name">John Doe</p>
+                      <p class="position-applied">Frontend Developer</p>
+                      <div class="candidate-skills">
+                        <span class="skill-badge">React</span>
+                        <span class="skill-badge">TypeScript</span>
+                        <span class="skill-badge">CSS</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="application-status">
+                    <span class="status-badge new">New</span>
+                    <p class="applied-date">2 hours ago</p>
+                    <button class="btn btn-outline btn-sm">Review</button>
+                  </div>
+                </div>
+
+                <!-- Application 2 -->
+                <div class="application-item">
+                  <div class="candidate-info">
+                    <div class="candidate-avatar">
+                      <img
+                        src="/placeholder.svg?height=40&width=40"
+                        alt="Jane Smith"
+                      />
+                      <span class="avatar-fallback">JS</span>
+                    </div>
+                    <div class="candidate-details">
+                      <p class="candidate-name">Jane Smith</p>
+                      <p class="position-applied">Backend Engineer</p>
+                      <div class="candidate-skills">
+                        <span class="skill-badge">Python</span>
+                        <span class="skill-badge">Django</span>
+                        <span class="skill-badge">PostgreSQL</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="application-status">
+                    <span class="status-badge reviewed">Reviewed</span>
+                    <p class="applied-date">1 day ago</p>
+                    <button class="btn btn-outline btn-sm">Review</button>
+                  </div>
+                </div>
+
+                <!-- Application 3 -->
+                <div class="application-item">
+                  <div class="candidate-info">
+                    <div class="candidate-avatar">
+                      <img
+                        src="/placeholder.svg?height=40&width=40"
+                        alt="Paul Tabi"
+                      />
+                      <span class="avatar-fallback">PT</span>
+                    </div>
+                    <div class="candidate-details">
+                      <p class="candidate-name">Paul Tabi</p>
+                      <p class="position-applied">Mobile Developer Intern</p>
+                      <div class="candidate-skills">
+                        <span class="skill-badge">React Native</span>
+                        <span class="skill-badge">JavaScript</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="application-status">
+                    <span class="status-badge interview"
+                      >Interview Scheduled</span
+                    >
+                    <p class="applied-date">2 days ago</p>
+                    <button class="btn btn-outline btn-sm">Review</button>
+                  </div>
+                </div>
+              </div>
+              <div class="card-footer">
+                <button class="btn btn-outline full-width">
+                  View All Applications
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column -->
+        <div class="right-column">
+          <!-- Hiring Metrics -->
+          <div class="card">
+            <div class="card-header">
+              <h3 class="card-title">
+                <i class="fas fa-chart-line"></i>
+                Hiring Metrics
+              </h3>
+              <p class="card-description">Your recruitment performance</p>
+            </div>
+            <div class="card-content">
+              <div class="metrics-list">
+                <div class="metric-item">
+                  <span class="metric-label">Time to Hire</span>
+                  <div class="metric-value-container">
+                    <span class="metric-value">18 days</span>
+                    <div class="trend-indicator down"></div>
+                  </div>
+                </div>
+                <div class="metric-item">
+                  <span class="metric-label">Application Rate</span>
+                  <div class="metric-value-container">
+                    <span class="metric-value">85%</span>
+                    <div class="trend-indicator up"></div>
+                  </div>
+                </div>
+                <div class="metric-item">
+                  <span class="metric-label">Interview Success</span>
+                  <div class="metric-value-container">
+                    <span class="metric-value">65%</span>
+                    <div class="trend-indicator up"></div>
+                  </div>
+                </div>
+                <div class="metric-item">
+                  <span class="metric-label">Offer Acceptance</span>
+                  <div class="metric-value-container">
+                    <span class="metric-value">78%</span>
+                    <div class="trend-indicator stable"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Quick Actions -->
+          <div class="card">
+            <div class="card-header">
+              <h3 class="card-title">Quick Actions</h3>
+              <p class="card-description">Common tasks and shortcuts</p>
+            </div>
+            <div class="card-content">
+              <div class="quick-actions">
+                <button class="action-btn">
+                  <i class="fas fa-plus"></i>
+                  Post New Job
+                </button>
+                <button class="action-btn">
+                  <i class="fas fa-users"></i>
+                  Browse Candidates
+                </button>
+                <button class="action-btn">
+                  <i class="fas fa-comment"></i>
+                  Send Message
+                </button>
+                <button class="action-btn">
+                  <i class="fas fa-chart-line"></i>
+                  View Analytics
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Company Profile -->
+          <div class="card">
+            <div class="card-header">
+              <h3 class="card-title">Company Profile</h3>
+              <p class="card-description">Your company information</p>
+            </div>
+            <div class="card-content">
+              <div class="profile-completion">
+                <div class="completion-header">
+                  <span class="completion-label">Profile Completion</span>
+                  <span class="completion-percentage">85%</span>
+                </div>
+                <div class="progress-bar">
+                  <div class="progress-fill" style="width: 85%"></div>
+                </div>
+              </div>
+              <div class="profile-items">
+                <div class="profile-item">
+                  <span class="item-label">Company Info</span>
+                  <span class="item-status complete">✓</span>
+                </div>
+                <div class="profile-item">
+                  <span class="item-label">Logo & Images</span>
+                  <span class="item-status complete">✓</span>
+                </div>
+                <div class="profile-item">
+                  <span class="item-label">Benefits & Perks</span>
+                  <span class="item-status pending">Pending</span>
+                </div>
+              </div>
+              <button class="btn btn-outline full-width">
+                Complete Profile
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="dashboard-employer.js"></script>
+  </body>
+</html>

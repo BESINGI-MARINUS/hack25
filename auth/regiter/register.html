@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register - TechConnect CM</title>
+    <link rel="stylesheet" href="../../styles.css" />
+    <link rel="stylesheet" href="./register.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <script defer src="../auth(1).js"></script>
+  </head>
+  <body>
+    <div class="auth-container">
+      <div class="auth-card">
+        <div class="auth-header">
+          <div class="nav-brand">
+            <div class="logo">
+              <i class="fas fa-graduation-cap"></i>
+            </div>
+            <span class="brand-name">TechConnect CM</span>
+          </div>
+          <h1>Create Your Account</h1>
+          <p>Join Cameroon's premier tech talent platform</p>
+        </div>
+
+        <form id="registerForm" class="auth-form">
+          <!-- User Type Selection -->
+          <div class="form-group">
+            <label class="form-label">I am a...</label>
+            <div class="user-type-grid">
+              <div class="user-type-option active" data-type="student">
+                <i class="fas fa-graduation-cap"></i>
+                <div>
+                  <div class="type-label">Student</div>
+                  <div class="type-description">
+                    Looking for mentorship and learning opportunities
+                  </div>
+                </div>
+              </div>
+              <div class="user-type-option" data-type="mentor">
+                <i class="fas fa-users"></i>
+                <div>
+                  <div class="type-label">Mentor</div>
+                  <div class="type-description">
+                    Experienced professional ready to guide others
+                  </div>
+                </div>
+              </div>
+              <div class="user-type-option" data-type="jobseeker">
+                <i class="fas fa-briefcase"></i>
+                <div>
+                  <div class="type-label">Job Seeker</div>
+                  <div class="type-description">
+                    Skilled professional seeking employment
+                  </div>
+                </div>
+              </div>
+              <div class="user-type-option" data-type="employer">
+                <i class="fas fa-building"></i>
+                <div>
+                  <div class="type-label">Employer</div>
+                  <div class="type-description">
+                    Company looking to hire talent
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Basic Information -->
+          <div class="form-row">
+            <div class="form-group">
+              <label for="firstName" class="form-label">First Name</label>
+              <input type="text" id="firstName" class="form-input" required />
+            </div>
+            <div class="form-group">
+              <label for="lastName" class="form-label">Last Name</label>
+              <input type="text" id="lastName" class="form-input" required />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" id="email" class="form-input" required />
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="password" class="form-label">Password</label>
+              <input
+                type="password"
+                id="password"
+                class="form-input"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="confirmPassword" class="form-label"
+                >Confirm Password</label
+              >
+              <input
+                type="password"
+                id="confirmPassword"
+                class="form-input"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="location" class="form-label">Location</label>
+              <select id="location" class="form-select">
+                <option value="">Select city</option>
+                <option value="yaounde">Yaoundé</option>
+                <option value="douala">Douala</option>
+                <option value="bamenda">Bamenda</option>
+                <option value="bafoussam">Bafoussam</option>
+                <option value="garoua">Garoua</option>
+                <option value="maroua">Maroua</option>
+                <option value="ngaoundere">Ngaoundéré</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Role-specific fields -->
+
+          <div id="skillsField" class="form-group">
+            <label for="skills" class="form-label">Skills</label>
+            <input
+              type="text"
+              id="skills"
+              class="form-input"
+              placeholder="e.g., JavaScript, Python, React, Node.js"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="bio" class="form-label">Bio</label>
+            <textarea
+              id="bio"
+              class="form-textarea"
+              placeholder="Tell us about yourself..."
+              rows="3"
+            ></textarea>
+          </div>
+
+          <div class="checkbox-group">
+            <input type="checkbox" id="agreeToTerms" required />
+            <label for="agreeToTerms" class="form-label">
+              I agree to the <a href="terms.html">Terms of Service</a> and
+              <a href="privacy.html">Privacy Policy</a>
+            </label>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-full">
+            Create Account
+          </button>
+        </form>
+
+        <div class="auth-footer">
+          <p>
+            Already have an account? <a href="../login/login.html">Sign in</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

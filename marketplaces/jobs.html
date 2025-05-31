@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Find Jobs - TechConnect CM</title>
+    <link rel="stylesheet" href="marketplace-styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <script defer src="./marketplace.js"></script>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="container">
+        <div class="header-content">
+          <div class="logo">
+            <div class="logo-icon">
+              <i class="fas fa-graduation-cap"></i>
+            </div>
+            <span class="logo-text">TechConnect CM</span>
+          </div>
+          <nav class="main-nav">
+            <ul>
+              <li><a href="dashboard-student.html">Dashboard</a></li>
+              <li><a href="marketplace-mentors.html">Mentors</a></li>
+              <li><a href="marketplace-jobs.html" class="active">Jobs</a></li>
+              <li><a href="marketplace-internships.html">Internships</a></li>
+              <li><a href="messages.html">Messages</a></li>
+            </ul>
+          </nav>
+          <div class="header-actions">
+            <button class="btn btn-ghost btn-sm">
+              <i class="fas fa-comment"></i>
+              Messages
+            </button>
+            <div class="avatar">
+              <img src="/placeholder.svg?height=32&width=32" alt="User" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="container main-content">
+      <!-- Page Header -->
+      <div class="page-header">
+        <h1>Find Your Dream Job</h1>
+        <p>
+          Discover exciting career opportunities in Cameroon's tech industry
+        </p>
+      </div>
+
+      <!-- Search and Filters -->
+      <div class="search-filters-card">
+        <div class="search-filters-grid jobs-filters">
+          <div class="search-input-wrapper">
+            <div class="search-input-container">
+              <i class="fas fa-search search-icon"></i>
+              <input
+                type="text"
+                placeholder="Search jobs..."
+                class="search-input"
+              />
+            </div>
+          </div>
+          <select class="filter-select">
+            <option value="">Location</option>
+            <option value="yaounde">Yaoundé</option>
+            <option value="douala">Douala</option>
+            <option value="bamenda">Bamenda</option>
+          </select>
+          <select class="filter-select">
+            <option value="">Job Type</option>
+            <option value="full-time">Full-time</option>
+            <option value="part-time">Part-time</option>
+            <option value="contract">Contract</option>
+          </select>
+          <select class="filter-select">
+            <option value="">Experience Level</option>
+            <option value="entry">Entry-level</option>
+            <option value="junior">Junior</option>
+            <option value="mid">Mid-level</option>
+            <option value="senior">Senior</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Results Header -->
+      <div class="results-header">
+        <p class="results-count">6 jobs found</p>
+        <select class="sort-select">
+          <option value="recent">Most Recent</option>
+          <option value="salary-high">Highest Salary</option>
+          <option value="salary-low">Lowest Salary</option>
+          <option value="applicants">Fewest Applicants</option>
+        </select>
+      </div>
+
+      <!-- Jobs List -->
+      <div class="jobs-list">
+        <!-- Job Card 1 -->
+        <div class="job-card">
+          <div class="job-header">
+            <div class="company-logo">
+              <i class="fas fa-building"></i>
+            </div>
+            <div class="job-info">
+              <div class="job-title-section">
+                <h3 class="job-title">Frontend Developer</h3>
+                <span class="job-level-badge">Mid-level</span>
+              </div>
+              <p class="company-name">MTN Cameroon</p>
+              <div class="job-meta">
+                <div class="meta-item">
+                  <i class="fas fa-map-marker-alt"></i>
+                  <span>Yaoundé</span>
+                </div>
+                <div class="meta-item">
+                  <i class="fas fa-briefcase"></i>
+                  <span>Full-time</span>
+                </div>
+                <div class="meta-item">
+                  <i class="fas fa-dollar-sign"></i>
+                  <span>800,000 - 1,200,000 FCFA</span>
+                </div>
+              </div>
+              <p class="posted-date">2 days ago</p>
+            </div>
+          </div>
+
+          <p class="job-description">
+            We're looking for a skilled Frontend Developer to join our digital
+            transformation team...
+          </p>
+
+          <div class="job-requirements">
+            <h4>Key Requirements:</h4>
+            <ul>
+              <li>3+ years React experience</li>
+              <li>TypeScript proficiency</li>
+              <li>REST API integration</li>
+            </ul>
+          </div>
+
+          <div class="job-skills">
+            <span class="skill-badge">React</span>
+            <span class="skill-badge">TypeScript</span>
+            <span class="skill-badge">CSS</span>
+            <span class="skill-badge">JavaScript</span>
+          </div>
+
+          <div class="job-footer">
+            <div class="applicants-count">
+              <i class="fas fa-clock"></i>
+              <span>45 applicants</span>
+            </div>
+            <div class="job-actions">
+              <button class="btn btn-outline btn-sm">Save Job</button>
+              <button class="btn btn-primary btn-sm">Apply Now</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Job Card 2 -->
+        <div class="job-card">
+          <div class="job-header">
+            <div class="company-logo">
+              <i class="fas fa-building"></i>
+            </div>
+            <div class="job-info">
+              <div class="job-title-section">
+                <h3 class="job-title">Backend Engineer</h3>
+                <span class="job-level-badge">Senior</span>
+                <span class="remote-badge">Remote</span>
+              </div>
+              <p class="company-name">Orange Cameroon</p>
+              <div class="job-meta">
+                <div class="meta-item">
+                  <i class="fas fa-map-marker-alt"></i>
+                  <span>Douala</span>
+                </div>
+                <div class="meta-item">
+                  <i class="fas fa-briefcase"></i>
+                  <span>Full-time</span>
+                </div>
+                <div class="meta-item">
+                  <i class="fas fa-dollar-sign"></i>
+                  <span>1,200,000 - 1,800,000 FCFA</span>
+                </div>
+              </div>
+              <p class="posted-date">1 week ago</p>
+            </div>
+          </div>
+
+          <p class="job-description">
+            Join our backend team to build scalable microservices and APIs...
+          </p>
+
+          <div class="job-requirements">
+            <h4>Key Requirements:</h4>
+            <ul>
+              <li>5+ years Python/Django</li>
+              <li>Microservices architecture</li>
+              <li>Cloud platforms</li>
+            </ul>
+          </div>
+
+          <div class="job-skills">
+            <span class="skill-badge">Python</span>
+            <span class="skill-badge">Django</span>
+            <span class="skill-badge">PostgreSQL</span>
+            <span class="skill-badge">AWS</span>
+          </div>
+
+          <div class="job-footer">
+            <div class="applicants-count">
+              <i class="fas fa-clock"></i>
+              <span>32 applicants</span>
+            </div>
+            <div class="job-actions">
+              <button class="btn btn-outline btn-sm">Save Job</button>
+              <button class="btn btn-primary btn-sm">Apply Now</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Job Card 3 -->
+        <div class="job-card">
+          <div class="job-header">
+            <div class="company-logo">
+              <i class="fas fa-building"></i>
+            </div>
+            <div class="job-info">
+              <div class="job-title-section">
+                <h3 class="job-title">Mobile App Developer</h3>
+                <span class="job-level-badge">Mid-level</span>
+              </div>
+              <p class="company-name">Jumia Cameroon</p>
+              <div class="job-meta">
+                <div class="meta-item">
+                  <i class="fas fa-map-marker-alt"></i>
+                  <span>Yaoundé</span>
+                </div>
+                <div class="meta-item">
+                  <i class="fas fa-briefcase"></i>
+                  <span>Full-time</span>
+                </div>
+                <div class="meta-item">
+                  <i class="fas fa-dollar-sign"></i>
+                  <span>700,000 - 1,000,000 FCFA</span>
+                </div>
+              </div>
+              <p class="posted-date">3 days ago</p>
+            </div>
+          </div>
+
+          <p class="job-description">
+            Develop and maintain our mobile applications for iOS and Android
+            platforms...
+          </p>
+
+          <div class="job-requirements">
+            <h4>Key Requirements:</h4>
+            <ul>
+              <li>React Native experience</li>
+              <li>Mobile app deployment</li>
+              <li>API integration</li>
+            </ul>
+          </div>
+
+          <div class="job-skills">
+            <span class="skill-badge">React Native</span>
+            <span class="skill-badge">JavaScript</span>
+            <span class="skill-badge">iOS</span>
+            <span class="skill-badge">Android</span>
+          </div>
+
+          <div class="job-footer">
+            <div class="applicants-count">
+              <i class="fas fa-clock"></i>
+              <span>28 applicants</span>
+            </div>
+            <div class="job-actions">
+              <button class="btn btn-outline btn-sm">Save Job</button>
+              <button class="btn btn-primary btn-sm">Apply Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Load More -->
+      <div class="load-more">
+        <button class="btn btn-outline">Load More Jobs</button>
+      </div>
+    </div>
+  </body>
+</html>

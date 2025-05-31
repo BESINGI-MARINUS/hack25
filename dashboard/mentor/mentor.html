@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mentor Dashboard - TechConnect CM</title>
+    <link rel="stylesheet" href="./mentor.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="container">
+        <div class="header-content">
+          <div class="logo">
+            <div class="logo-icon">
+              <i class="fas fa-graduation-cap"></i>
+            </div>
+            <span class="logo-text">TechConnect CM</span>
+          </div>
+          <nav class="main-nav">
+            <ul>
+              <li>
+                <a href="dashboard-mentor.html" class="active">Dashboard</a>
+              </li>
+              <li><a href="mentor-students.html">My Students</a></li>
+              <li><a href="mentor-sessions.html">Sessions</a></li>
+              <li><a href="mentor-earnings.html">Earnings</a></li>
+              <li><a href="messages.html">Messages</a></li>
+            </ul>
+          </nav>
+          <div class="header-actions">
+            <button class="btn btn-ghost btn-sm">
+              <i class="fas fa-comment"></i>
+              Messages
+            </button>
+            <div class="avatar">
+              <img src="/placeholder.svg?height=32&width=32" alt="Dr. Sarah" />
+              <span class="avatar-fallback">SM</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="container main-content">
+      <!-- Welcome Section -->
+      <div class="welcome-section">
+        <h1>Welcome back, Dr. Sarah!</h1>
+        <p>Here's your mentoring activity overview</p>
+      </div>
+
+      <!-- Stats Cards -->
+      <div class="stats-grid">
+        <div class="stat-card">
+          <div class="stat-content">
+            <div class="stat-info">
+              <p class="stat-label">Active Students</p>
+              <p class="stat-value">24</p>
+            </div>
+            <div class="stat-icon blue">
+              <i class="fas fa-users"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-content">
+            <div class="stat-info">
+              <p class="stat-label">This Month Earnings</p>
+              <p class="stat-value">520K</p>
+              <p class="stat-trend positive">+15% from last month</p>
+            </div>
+            <div class="stat-icon green">
+              <i class="fas fa-dollar-sign"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-content">
+            <div class="stat-info">
+              <p class="stat-label">Sessions This Month</p>
+              <p class="stat-value">35</p>
+            </div>
+            <div class="stat-icon purple">
+              <i class="fas fa-calendar"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-content">
+            <div class="stat-info">
+              <p class="stat-label">Average Rating</p>
+              <p class="stat-value">4.9</p>
+              <div class="rating-info">
+                <i class="fas fa-star"></i>
+                <span>(127 reviews)</span>
+              </div>
+            </div>
+            <div class="stat-icon orange">
+              <i class="fas fa-star"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Main Dashboard Grid -->
+      <div class="dashboard-grid">
+        <!-- Left Column -->
+        <div class="left-column">
+          <!-- Upcoming Sessions -->
+          <div class="card">
+            <div class="card-header">
+              <h3 class="card-title">
+                <i class="fas fa-calendar"></i>
+                Upcoming Sessions
+              </h3>
+              <p class="card-description">Your scheduled mentoring sessions</p>
+            </div>
+            <div class="card-content">
+              <div class="sessions-list">
+                <!-- Session 1 -->
+                <div class="session-item">
+                  <div class="session-info">
+                    <div class="session-avatar">
+                      <img
+                        src="/placeholder.svg?height=40&width=40"
+                        alt="John Doe"
+                      />
+                      <span class="avatar-fallback">JD</span>
+                    </div>
+                    <div class="session-details">
+                      <p class="student-name">John Doe</p>
+                      <p class="session-topic">React Best Practices</p>
+                      <div class="session-meta">
+                        <span class="session-time">Today, 3:00 PM</span>
+                        <span class="session-duration">1 hour</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="session-actions">
+                    <span class="session-type">
+                      <i class="fas fa-video"></i>
+                      Video Call
+                    </span>
+                    <button class="btn btn-primary btn-sm">
+                      Start Session
+                    </button>
+                  </div>
+                </div>
+
+                <!-- Session 2 -->
+                <div class="session-item">
+                  <div class="session-info">
+                    <div class="session-avatar">
+                      <img
+                        src="/placeholder.svg?height=40&width=40"
+                        alt="Jane Smith"
+                      />
+                      <span class="avatar-fallback">JS</span>
+                    </div>
+                    <div class="session-details">
+                      <p class="student-name">Jane Smith</p>
+                      <p class="session-topic">Career Planning</p>
+                      <div class="session-meta">
+                        <span class="session-time">Tomorrow, 10:00 AM</span>
+                        <span class="session-duration">45 minutes</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="session-actions">
+                    <span class="session-type">
+                      <i class="fas fa-comment"></i>
+                      Chat
+                    </span>
+                    <button class="btn btn-primary btn-sm">
+                      Start Session
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="card-footer">
+                <button class="btn btn-outline full-width">
+                  View All Sessions
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Student Progress -->
+          <div class="card">
+            <div class="card-header">
+              <h3 class="card-title">
+                <i class="fas fa-chart-line"></i>
+                Student Progress
+              </h3>
+              <p class="card-description">
+                Track your students' learning journey
+              </p>
+            </div>
+            <div class="card-content">
+              <div class="progress-list">
+                <!-- Student 1 -->
+                <div class="progress-item">
+                  <div class="progress-header">
+                    <div class="student-info">
+                      <div class="student-avatar">
+                        <span class="avatar-fallback">JD</span>
+                      </div>
+                      <div class="student-details">
+                        <p class="student-name">John Doe</p>
+                        <p class="learning-skill">Learning React</p>
+                      </div>
+                    </div>
+                    <div class="progress-stats">
+                      <p class="progress-percentage">75%</p>
+                      <p class="sessions-count">8 sessions</p>
+                    </div>
+                  </div>
+                  <div class="progress-bar">
+                    <div class="progress-fill" style="width: 75%"></div>
+                  </div>
+                </div>
+
+                <!-- Student 2 -->
+                <div class="progress-item">
+                  <div class="progress-header">
+                    <div class="student-info">
+                      <div class="student-avatar">
+                        <span class="avatar-fallback">JS</span>
+                      </div>
+                      <div class="student-details">
+                        <p class="student-name">Jane Smith</p>
+                        <p class="learning-skill">Learning Node.js</p>
+                      </div>
+                    </div>
+                    <div class="progress-stats">
+                      <p class="progress-percentage">60%</p>
+                      <p class="sessions-count">6 sessions</p>
+                    </div>
+                  </div>
+                  <div class="progress-bar">
+                    <div class="progress-fill" style="width: 60%"></div>
+                  </div>
+                </div>
+
+                <!-- Student 3 -->
+                <div class="progress-item">
+                  <div class="progress-header">
+                    <div class="student-info">
+                      <div class="student-avatar">
+                        <span class="avatar-fallback">PT</span>
+                      </div>
+                      <div class="student-details">
+                        <p class="student-name">Paul Tabi</p>
+                        <p class="learning-skill">Learning Python</p>
+                      </div>
+                    </div>
+                    <div class="progress-stats">
+                      <p class="progress-percentage">85%</p>
+                      <p class="sessions-count">12 sessions</p>
+                    </div>
+                  </div>
+                  <div class="progress-bar">
+                    <div class="progress-fill" style="width: 85%"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-footer">
+                <button class="btn btn-outline full-width">
+                  View All Students
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column -->
+        <div class="right-column">
+          <!-- Earnings Overview -->
+          <div class="card">
+            <div class="card-header">
+              <h3 class="card-title">
+                <i class="fas fa-dollar-sign"></i>
+                Earnings Overview
+              </h3>
+              <p class="card-description">Your recent earnings</p>
+            </div>
+            <div class="card-content">
+              <div class="earnings-list">
+                <div class="earning-item">
+                  <div class="earning-info">
+                    <p class="earning-month">January</p>
+                    <p class="earning-sessions">30 sessions</p>
+                  </div>
+                  <p class="earning-amount">450,000 FCFA</p>
+                </div>
+                <div class="earning-item">
+                  <div class="earning-info">
+                    <p class="earning-month">February</p>
+                    <p class="earning-sessions">35 sessions</p>
+                  </div>
+                  <p class="earning-amount">520,000 FCFA</p>
+                </div>
+                <div class="earning-item">
+                  <div class="earning-info">
+                    <p class="earning-month">March</p>
+                    <p class="earning-sessions">25 sessions</p>
+                  </div>
+                  <p class="earning-amount">380,000 FCFA</p>
+                </div>
+              </div>
+              <div class="card-footer">
+                <button class="btn btn-outline full-width">
+                  View Detailed Earnings
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Quick Actions -->
+          <div class="card">
+            <div class="card-header">
+              <h3 class="card-title">Quick Actions</h3>
+              <p class="card-description">Common tasks and shortcuts</p>
+            </div>
+            <div class="card-content">
+              <div class="quick-actions">
+                <button class="action-btn">
+                  <i class="fas fa-calendar"></i>
+                  Schedule Session
+                </button>
+                <button class="action-btn">
+                  <i class="fas fa-users"></i>
+                  View Student Requests
+                </button>
+                <button class="action-btn">
+                  <i class="fas fa-comment"></i>
+                  Send Message
+                </button>
+                <button class="action-btn">
+                  <i class="fas fa-star"></i>
+                  Update Profile
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Performance Metrics -->
+          <div class="card">
+            <div class="card-header">
+              <h3 class="card-title">Performance Metrics</h3>
+              <p class="card-description">Your mentoring statistics</p>
+            </div>
+            <div class="card-content">
+              <div class="metrics-list">
+                <div class="metric-item">
+                  <span class="metric-label">Response Time</span>
+                  <span class="metric-value">< 2 hours</span>
+                </div>
+                <div class="metric-item">
+                  <span class="metric-label">Session Completion</span>
+                  <span class="metric-value">98%</span>
+                </div>
+                <div class="metric-item">
+                  <span class="metric-label">Student Satisfaction</span>
+                  <span class="metric-value">4.9/5</span>
+                </div>
+                <div class="metric-item">
+                  <span class="metric-label">Total Sessions</span>
+                  <span class="metric-value">450</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Find Internships - TechConnect CM</title>
+    <link rel="stylesheet" href="marketplace-styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <script defer src="./marketplace.js"></script>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="container">
+        <div class="header-content">
+          <div class="logo">
+            <div class="logo-icon">
+              <i class="fas fa-graduation-cap"></i>
+            </div>
+            <span class="logo-text">TechConnect CM</span>
+          </div>
+          <nav class="main-nav">
+            <ul>
+              <li><a href="dashboard-student.html">Dashboard</a></li>
+              <li><a href="marketplace-mentors.html">Mentors</a></li>
+              <li><a href="marketplace-jobs.html">Jobs</a></li>
+              <li>
+                <a href="marketplace-internships.html" class="active"
+                  >Internships</a
+                >
+              </li>
+              <li><a href="messages.html">Messages</a></li>
+            </ul>
+          </nav>
+          <div class="header-actions">
+            <button class="btn btn-ghost btn-sm">
+              <i class="fas fa-comment"></i>
+              Messages
+            </button>
+            <div class="avatar">
+              <img src="/placeholder.svg?height=32&width=32" alt="User" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="container main-content">
+      <!-- Page Header -->
+      <div class="page-header">
+        <h1>Internship Opportunities</h1>
+        <p>Gain real-world experience with leading companies in Cameroon</p>
+      </div>
+
+      <!-- Search and Filters -->
+      <div class="search-filters-card">
+        <div class="search-filters-grid jobs-filters">
+          <div class="search-input-wrapper">
+            <div class="search-input-container">
+              <i class="fas fa-search search-icon"></i>
+              <input
+                type="text"
+                placeholder="Search internships..."
+                class="search-input"
+              />
+            </div>
+          </div>
+          <select class="filter-select">
+            <option value="">Location</option>
+            <option value="yaounde">Yaoundé</option>
+            <option value="douala">Douala</option>
+            <option value="bamenda">Bamenda</option>
+          </select>
+          <select class="filter-select">
+            <option value="">Duration</option>
+            <option value="3-months">3 months</option>
+            <option value="4-months">4 months</option>
+            <option value="6-months">6 months</option>
+          </select>
+          <select class="filter-select">
+            <option value="">Field</option>
+            <option value="web-dev">Web Development</option>
+            <option value="mobile-dev">Mobile Development</option>
+            <option value="data-science">Data Science</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Results Header -->
+      <div class="results-header">
+        <p class="results-count">6 internships found</p>
+        <select class="sort-select">
+          <option value="recent">Most Recent</option>
+          <option value="stipend-high">Highest Stipend</option>
+          <option value="duration-short">Shortest Duration</option>
+          <option value="applicants">Fewest Applicants</option>
+        </select>
+      </div>
+
+      <!-- Internships List -->
+      <div class="jobs-list">
+        <!-- Internship Card 1 -->
+        <div class="job-card internship-card">
+          <div class="job-header">
+            <div class="company-logo">
+              <i class="fas fa-building"></i>
+            </div>
+            <div class="job-info">
+              <div class="job-title-section">
+                <h3 class="job-title">Frontend Development Intern</h3>
+                <span class="field-badge">Web Development</span>
+                <span class="mentorship-badge">Mentorship Included</span>
+              </div>
+              <p class="company-name">MTN Cameroon</p>
+              <div class="job-meta">
+                <div class="meta-item">
+                  <i class="fas fa-map-marker-alt"></i>
+                  <span>Yaoundé</span>
+                </div>
+                <div class="meta-item">
+                  <i class="fas fa-clock"></i>
+                  <span>3 months</span>
+                </div>
+                <div class="meta-item">
+                  <i class="fas fa-calendar"></i>
+                  <span>Starts March 2024</span>
+                </div>
+              </div>
+              <p class="posted-date">1 day ago</p>
+              <p class="stipend">150,000 FCFA/month</p>
+            </div>
+          </div>
+
+          <p class="job-description">
+            Join our development team to work on customer-facing web
+            applications using modern technologies...
+          </p>
+
+          <div class="job-requirements">
+            <h4>Requirements:</h4>
+            <ul>
+              <li>Basic React knowledge</li>
+              <li>HTML/CSS proficiency</li>
+              <li>JavaScript fundamentals</li>
+            </ul>
+          </div>
+
+          <div class="job-skills">
+            <span class="skill-badge">React</span>
+            <span class="skill-badge">JavaScript</span>
+            <span class="skill-badge">CSS</span>
+            <span class="skill-badge">Git</span>
+          </div>
+
+          <div class="job-footer">
+            <div class="applicants-count">
+              <i class="fas fa-users"></i>
+              <span>23 applicants</span>
+            </div>
+            <div class="job-actions">
+              <button class="btn btn-outline btn-sm">Save</button>
+              <button class="btn btn-primary btn-sm">Apply Now</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Internship Card 2 -->
+        <div class="job-card internship-card">
+          <div class="job-header">
+            <div class="company-logo">
+              <i class="fas fa-building"></i>
+            </div>
+            <div class="job-info">
+              <div class="job-title-section">
+                <h3 class="job-title">Data Science Intern</h3>
+                <span class="field-badge">Data Science</span>
+                <span class="mentorship-badge">Mentorship Included</span>
+                <span class="remote-badge">Remote</span>
+              </div>
+              <p class="company-name">Orange Cameroon</p>
+              <div class="job-meta">
+                <div class="meta-item">
+                  <i class="fas fa-map-marker-alt"></i>
+                  <span>Douala</span>
+                </div>
+                <div class="meta-item">
+                  <i class="fas fa-clock"></i>
+                  <span>6 months</span>
+                </div>
+                <div class="meta-item">
+                  <i class="fas fa-calendar"></i>
+                  <span>Starts April 2024</span>
+                </div>
+              </div>
+              <p class="posted-date">3 days ago</p>
+              <p class="stipend">200,000 FCFA/month</p>
+            </div>
+          </div>
+
+          <p class="job-description">
+            Work with our data team to analyze customer behavior and build
+            predictive models...
+          </p>
+
+          <div class="job-requirements">
+            <h4>Requirements:</h4>
+            <ul>
+              <li>Python basics</li>
+              <li>Statistics knowledge</li>
+              <li>SQL fundamentals</li>
+            </ul>
+          </div>
+
+          <div class="job-skills">
+            <span class="skill-badge">Python</span>
+            <span class="skill-badge">SQL</span>
+            <span class="skill-badge">Statistics</span>
+            <span class="skill-badge">Machine Learning</span>
+          </div>
+
+          <div class="job-footer">
+            <div class="applicants-count">
+              <i class="fas fa-users"></i>
+              <span>18 applicants</span>
+            </div>
+            <div class="job-actions">
+              <button class="btn btn-outline btn-sm">Save</button>
+              <button class="btn btn-primary btn-sm">Apply Now</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Internship Card 3 -->
+        <div class="job-card internship-card">
+          <div class="job-header">
+            <div class="company-logo">
+              <i class="fas fa-building"></i>
+            </div>
+            <div class="job-info">
+              <div class="job-title-section">
+                <h3 class="job-title">Mobile App Development Intern</h3>
+                <span class="field-badge">Mobile Development</span>
+                <span class="mentorship-badge">Mentorship Included</span>
+              </div>
+              <p class="company-name">Jumia Cameroon</p>
+              <div class="job-meta">
+                <div class="meta-item">
+                  <i class="fas fa-map-marker-alt"></i>
+                  <span>Yaoundé</span>
+                </div>
+                <div class="meta-item">
+                  <i class="fas fa-clock"></i>
+                  <span>4 months</span>
+                </div>
+                <div class="meta-item">
+                  <i class="fas fa-calendar"></i>
+                  <span>Starts March 2024</span>
+                </div>
+              </div>
+              <p class="posted-date">5 days ago</p>
+              <p class="stipend">175,000 FCFA/month</p>
+            </div>
+          </div>
+
+          <p class="job-description">
+            Contribute to our mobile app development team working on e-commerce
+            solutions...
+          </p>
+
+          <div class="job-requirements">
+            <h4>Requirements:</h4>
+            <ul>
+              <li>React Native basics</li>
+              <li>Mobile development interest</li>
+              <li>JavaScript knowledge</li>
+            </ul>
+          </div>
+
+          <div class="job-skills">
+            <span class="skill-badge">React Native</span>
+            <span class="skill-badge">JavaScript</span>
+            <span class="skill-badge">Mobile Development</span>
+            <span class="skill-badge">API Integration</span>
+          </div>
+
+          <div class="job-footer">
+            <div class="applicants-count">
+              <i class="fas fa-users"></i>
+              <span>31 applicants</span>
+            </div>
+            <div class="job-actions">
+              <button class="btn btn-outline btn-sm">Save</button>
+              <button class="btn btn-primary btn-sm">Apply Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Load More -->
+      <div class="load-more">
+        <button class="btn btn-outline">Load More Internships</button>
+      </div>
+    </div>
+  </body>
+</html>

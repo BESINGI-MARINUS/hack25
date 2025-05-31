@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Find Mentors - TechConnect CM</title>
+    <link rel="stylesheet" href="marketplace-styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <script defer src="./marketplace.js"></script>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="container">
+        <div class="header-content">
+          <div class="logo">
+            <div class="logo-icon">
+              <i class="fas fa-graduation-cap"></i>
+            </div>
+            <span class="logo-text">TechConnect CM</span>
+          </div>
+          <nav class="main-nav">
+            <ul>
+              <li><a href="dashboard-student.html">Dashboard</a></li>
+              <li>
+                <a href="marketplace-mentors.html" class="active">Mentors</a>
+              </li>
+              <li><a href="marketplace-jobs.html">Jobs</a></li>
+              <li><a href="marketplace-internships.html">Internships</a></li>
+              <li><a href="messages.html">Messages</a></li>
+            </ul>
+          </nav>
+          <div class="header-actions">
+            <button class="btn btn-ghost btn-sm">
+              <i class="fas fa-comment"></i>
+              Messages
+            </button>
+            <div class="avatar">
+              <img src="/placeholder.svg?height=32&width=32" alt="User" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="container main-content">
+      <!-- Page Header -->
+      <div class="page-header">
+        <h1>Find Your Mentor</h1>
+        <p>
+          Connect with experienced professionals to accelerate your learning
+        </p>
+      </div>
+
+      <!-- Search and Filters -->
+      <div class="search-filters-card">
+        <div class="search-filters-grid">
+          <div class="search-input-wrapper">
+            <div class="search-input-container">
+              <i class="fas fa-search search-icon"></i>
+              <input
+                type="text"
+                placeholder="Search mentors, skills, or companies..."
+                class="search-input"
+              />
+            </div>
+          </div>
+          <select class="filter-select">
+            <option value="">Select skill</option>
+            <option value="react">React</option>
+            <option value="nodejs">Node.js</option>
+            <option value="python">Python</option>
+            <option value="django">Django</option>
+          </select>
+          <select class="filter-select">
+            <option value="">Select location</option>
+            <option value="yaounde">Yaoundé</option>
+            <option value="douala">Douala</option>
+            <option value="bamenda">Bamenda</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Results Header -->
+      <div class="results-header">
+        <p class="results-count">4 mentors found</p>
+        <select class="sort-select">
+          <option value="rating">Highest Rated</option>
+          <option value="price-low">Price: Low to High</option>
+          <option value="price-high">Price: High to Low</option>
+          <option value="experience">Most Experienced</option>
+        </select>
+      </div>
+
+      <!-- Mentors Grid -->
+      <div class="mentors-grid">
+        <!-- Mentor Card 1 -->
+        <div class="mentor-card">
+          <div class="mentor-header">
+            <div class="mentor-avatar">
+              <img
+                src="/placeholder.svg?height=64&width=64"
+                alt="Dr. Sarah Mbah"
+              />
+            </div>
+            <div class="mentor-info">
+              <div class="mentor-title-section">
+                <h3 class="mentor-name">Dr. Sarah Mbah</h3>
+                <span class="availability-badge available">Available</span>
+              </div>
+              <p class="mentor-title">
+                Senior Software Engineer at MTN Cameroon
+              </p>
+              <div class="mentor-location">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Yaoundé</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="mentor-stats">
+            <div class="stat-item">
+              <i class="fas fa-star"></i>
+              <span class="rating">4.9</span>
+              <span class="reviews">(127 reviews)</span>
+            </div>
+            <div class="stat-item">
+              <i class="fas fa-users"></i>
+              <span>450 sessions</span>
+            </div>
+            <div class="stat-item">
+              <i class="fas fa-clock"></i>
+              <span>< 2 hours</span>
+            </div>
+          </div>
+
+          <p class="mentor-bio">
+            10+ years experience in full-stack development. Passionate about
+            mentoring the next generation of developers.
+          </p>
+
+          <div class="mentor-skills">
+            <span class="skill-badge">React</span>
+            <span class="skill-badge">Node.js</span>
+            <span class="skill-badge">TypeScript</span>
+            <span class="skill-badge">AWS</span>
+          </div>
+
+          <div class="mentor-footer">
+            <div class="pricing">
+              <span class="price">15,000 FCFA</span>
+              <span class="period">/hour</span>
+            </div>
+            <div class="mentor-actions">
+              <button class="btn btn-outline btn-sm">
+                <i class="fas fa-comment"></i>
+                Message
+              </button>
+              <button class="btn btn-primary btn-sm">
+                <i class="fas fa-calendar"></i>
+                Book Session
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mentor Card 2 -->
+        <div class="mentor-card">
+          <div class="mentor-header">
+            <div class="mentor-avatar">
+              <img src="/placeholder.svg?height=64&width=64" alt="John Tabi" />
+            </div>
+            <div class="mentor-info">
+              <div class="mentor-title-section">
+                <h3 class="mentor-name">John Tabi</h3>
+                <span class="availability-badge available">Available</span>
+              </div>
+              <p class="mentor-title">Tech Lead at Orange Cameroon</p>
+              <div class="mentor-location">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Douala</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="mentor-stats">
+            <div class="stat-item">
+              <i class="fas fa-star"></i>
+              <span class="rating">4.8</span>
+              <span class="reviews">(89 reviews)</span>
+            </div>
+            <div class="stat-item">
+              <i class="fas fa-users"></i>
+              <span>320 sessions</span>
+            </div>
+            <div class="stat-item">
+              <i class="fas fa-clock"></i>
+              <span>< 4 hours</span>
+            </div>
+          </div>
+
+          <p class="mentor-bio">
+            Experienced tech lead with expertise in backend systems and AI. Love
+            helping students transition into tech careers.
+          </p>
+
+          <div class="mentor-skills">
+            <span class="skill-badge">Python</span>
+            <span class="skill-badge">Django</span>
+            <span class="skill-badge">Machine Learning</span>
+            <span class="skill-badge">Data Science</span>
+          </div>
+
+          <div class="mentor-footer">
+            <div class="pricing">
+              <span class="price">12,000 FCFA</span>
+              <span class="period">/hour</span>
+            </div>
+            <div class="mentor-actions">
+              <button class="btn btn-outline btn-sm">
+                <i class="fas fa-comment"></i>
+                Message
+              </button>
+              <button class="btn btn-primary btn-sm">
+                <i class="fas fa-calendar"></i>
+                Book Session
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mentor Card 3 -->
+        <div class="mentor-card">
+          <div class="mentor-header">
+            <div class="mentor-avatar">
+              <img
+                src="/placeholder.svg?height=64&width=64"
+                alt="Marie Fotso"
+              />
+            </div>
+            <div class="mentor-info">
+              <div class="mentor-title-section">
+                <h3 class="mentor-name">Marie Fotso</h3>
+                <span class="availability-badge busy">Busy</span>
+              </div>
+              <p class="mentor-title">Product Manager at Jumia Cameroon</p>
+              <div class="mentor-location">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Yaoundé</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="mentor-stats">
+            <div class="stat-item">
+              <i class="fas fa-star"></i>
+              <span class="rating">4.7</span>
+              <span class="reviews">(156 reviews)</span>
+            </div>
+            <div class="stat-item">
+              <i class="fas fa-users"></i>
+              <span>280 sessions</span>
+            </div>
+            <div class="stat-item">
+              <i class="fas fa-clock"></i>
+              <span>< 6 hours</span>
+            </div>
+          </div>
+
+          <p class="mentor-bio">
+            Product management expert with 8 years experience. Specialized in
+            helping students understand product thinking.
+          </p>
+
+          <div class="mentor-skills">
+            <span class="skill-badge">Product Management</span>
+            <span class="skill-badge">UX Design</span>
+            <span class="skill-badge">Agile</span>
+            <span class="skill-badge">Strategy</span>
+          </div>
+
+          <div class="mentor-footer">
+            <div class="pricing">
+              <span class="price">18,000 FCFA</span>
+              <span class="period">/hour</span>
+            </div>
+            <div class="mentor-actions">
+              <button class="btn btn-outline btn-sm">
+                <i class="fas fa-comment"></i>
+                Message
+              </button>
+              <button class="btn btn-primary btn-sm">
+                <i class="fas fa-calendar"></i>
+                Book Session
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mentor Card 4 -->
+        <div class="mentor-card">
+          <div class="mentor-header">
+            <div class="mentor-avatar">
+              <img src="/placeholder.svg?height=64&width=64" alt="Paul Ngwa" />
+            </div>
+            <div class="mentor-info">
+              <div class="mentor-title-section">
+                <h3 class="mentor-name">Paul Ngwa</h3>
+                <span class="availability-badge available">Available</span>
+              </div>
+              <p class="mentor-title">DevOps Engineer at Freelance</p>
+              <div class="mentor-location">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Bamenda</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="mentor-stats">
+            <div class="stat-item">
+              <i class="fas fa-star"></i>
+              <span class="rating">4.9</span>
+              <span class="reviews">(203 reviews)</span>
+            </div>
+            <div class="stat-item">
+              <i class="fas fa-users"></i>
+              <span>380 sessions</span>
+            </div>
+            <div class="stat-item">
+              <i class="fas fa-clock"></i>
+              <span>< 1 hour</span>
+            </div>
+          </div>
+
+          <p class="mentor-bio">
+            DevOps specialist helping students master cloud technologies and
+            deployment strategies.
+          </p>
+
+          <div class="mentor-skills">
+            <span class="skill-badge">Docker</span>
+            <span class="skill-badge">Kubernetes</span>
+            <span class="skill-badge">CI/CD</span>
+            <span class="skill-badge">Linux</span>
+          </div>
+
+          <div class="mentor-footer">
+            <div class="pricing">
+              <span class="price">10,000 FCFA</span>
+              <span class="period">/hour</span>
+            </div>
+            <div class="mentor-actions">
+              <button class="btn btn-outline btn-sm">
+                <i class="fas fa-comment"></i>
+                Message
+              </button>
+              <button class="btn btn-primary btn-sm">
+                <i class="fas fa-calendar"></i>
+                Book Session
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Load More -->
+      <div class="load-more">
+        <button class="btn btn-outline">Load More Mentors</button>
+      </div>
+    </div>
+  </body>
+</html>
