@@ -695,8 +695,9 @@ body {
     font-size: 1.75rem;
   }
 
-  h2 {
-    font-size: 2rem;
+  section ~ h2 {
+    font-size: 3rem;
+    background: red;
   }
 
   .stats-grid {
