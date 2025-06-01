@@ -1,4 +1,13 @@
 "use strict";
+
+const btnBookMentor = document.querySelector(".book-mentor");
+
+btnBookMentor.addEventListener("click", function (e) {
+  const clicked = e.target.closest(".book-mentor");
+  if (!clicked) return;
+  window.location.href = "./payment.html";
+});
+
 class TechConnectMarketplace {
   constructor() {
     this.currentPage = this.detectCurrentPage();
