@@ -1,3 +1,7 @@
+const state = {
+  mentors :[],
+}
+
 function animateCount(el, endValue, duration = 5000) {
     let start = 0;
     let startTime = null;
@@ -75,3 +79,40 @@ observerSteps.observe(stepContainer);
       mobileMenu.classList.remove("show");
     }
   });
+
+  class user  {
+    _clearParent(){
+      this.parentEl.innerHtml = '';
+    }
+
+    render(){
+      const markup = this._generateMarkup;
+      this._clearParent();
+      this.parentEl.insertAdjacentHtml('afterbegin',markup);
+    }
+  }
+
+  // class mentor extends user{
+  //   this.parentEl = document.querySelector('.mentors-grid');
+  // }
+
+  const getAllUsers = async function () {
+    const response = await fetch('http://my_app.test/api/users');
+    const data = await response.json();
+    console.log(data)
+    state.mentors = data.filter(d=>d.role === 'mentor').map(d=>{
+      return {
+        name: `${d.first_name} ${d.last_name}`,
+        location: d.location,
+        user: d.role,
+        role:'Tech lead at Orange cameroon',
+        bio: 'Experienced tech lead with expertise in backend system and IA. Love helping students transition into tech careers.',
+        price:2000,
+        skills:['Python','Django','Machine Learning','Data Science']
+      }
+    })
+    console.log(state.mentors)
+  }
+
+  getAllUsers()
+  

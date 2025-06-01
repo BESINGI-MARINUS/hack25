@@ -33,7 +33,7 @@ function initializeUserTypeSelection() {
       option.classList.add("active");
 
       // Update role-specific fields
-      updateRoleSpecificFields(option.dataset.type);
+      // updateRoleSpecificFields(option.dataset.type);
     });
   });
 }
@@ -84,7 +84,7 @@ function updateRoleSpecificFields(userType) {
 
 // Enhanced form validation for auth forms
 function validateAuthForm(form) {
-  const userTypeSelected = document.querySelector(".user-type-option.selected");
+  const userTypeSelected = document.querySelector(".user-type-option.active");
 
   if (form.id === "registerForm" && !userTypeSelected) {
     showNotification("Please select your user type", "error");
@@ -196,7 +196,25 @@ function handleRememberMe() {
   }
 }
 
-// Initialize all auth features
+//Initialize all auth features
 initializePasswordStrength();
 initializeSocialLogin();
 handleRememberMe();
+
+//SIGN UP
+const agreeToTerms = document.querySelector('#agreeToTerms');
+const submitBtn = document.querySelector('.btn-full');
+
+console.log(submitBtn)
+if(agreeToTerms.checked){
+  console.log('checked');
+  submitBtn.disabled = true;
+}
+
+const registerForm = document.querySelector('#registerForm');
+console.log(registerForm)
+registerForm.addEventListener('submit',function(e){
+  e.preventDefault();
+  const formData = new formData(this);
+  console.log(formData)
+})
