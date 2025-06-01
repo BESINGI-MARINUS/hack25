@@ -54,3 +54,24 @@ function animateCount(el, endValue, duration = 5000) {
   }, { threshold: 0.4 });
 
 observerSteps.observe(stepContainer);
+
+
+
+  const hamburger = document.getElementById("hamburger");
+  const mobileMenu = document.getElementById("mobileMenu");
+
+  hamburger.addEventListener("click", () => {
+    hamburger.classList.toggle("open");
+    mobileMenu.classList.toggle("show");
+  });
+
+  // Optional: close menu when clicking outside
+  window.addEventListener("click", (e) => {
+    if (
+      !hamburger.contains(e.target) &&
+      !mobileMenu.contains(e.target)
+    ) {
+      hamburger.classList.remove("open");
+      mobileMenu.classList.remove("show");
+    }
+  });

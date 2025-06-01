@@ -14,27 +14,35 @@
   </head>
   <body>
     <!-- Header -->
-    <header class="header">
-      <div class="container">
-        <div class="nav-brand">
-          <div class="logo">
-            <i class="fas fa-graduation-cap"></i>
-          </div>
-          <span class="brand-name">TechConnect CM</span>
-        </div>
-        <nav class="nav-menu">
-          <a href="#features">Features</a>
-          <a href="#how-it-works">How it Works</a>
-          <a href="#pricing">Pricing</a>
-        </nav>
-        <div class="nav-actions">
-          <a href="./auth/login/login.html" class="btn btn-ghost">Sign In</a>
-          <a href="./auth/regiter/register.html" class="btn btn-primary"
-            >Get Started</a
-          >
-        </div>
-      </div>
-    </header>
+   <header class="header">
+  <div class="container">
+    <div class="nav-brand">
+      <div class="logo"><i class="fas fa-graduation-cap"></i></div>
+      <span class="brand-name">TechConnect CM</span>
+    </div>
+    <nav class="nav-menu">
+      <a href="#features">Features</a>
+      <a href="#how-it-works">How it Works</a>
+      <a href="#pricing">Pricing</a>
+    </nav>
+    <div class="nav-actions">
+      <a href="./auth/login/login.html" class="btn btn-ghost">Sign In</a>
+      <a href="./auth/regiter/register.html" class="btn btn-primary">Get Started</a>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <i class="fa-solid fa-bars"></i>
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+  </div>
+
+  <aside class="mobile-menu" id="mobileMenu">
+    <a href="#features">Features</a>
+    <a href="#how-it-works">How it Works</a>
+    <a href="#pricing">Pricing</a>
+    <a href="./auth/login/login.html">Sign In</a>
+    <a href="./auth/regiter/register.html">Get Started</a>
+  </aside>
+</header>
 
     <!-- Hero Section -->
     <section class="hero">
@@ -44,7 +52,7 @@
           Proudly Serving Cameroon
         </div>
         <h1 class="hero-title">
-          <span class="typer" id="main" data-words="Connect. Learn. Grow." data-delay="100" data-deleteDelay="1000" data-colors="#1f2937,#2563eb"></span>
+          <span class="typer" id="main" data-words="Connect. Learn. Grow." data-delay="100" data-deleteDelay="1000" data-colors="#1f2937,#2563eb">Connect. Learn. <span class="text-primary">Grow.</span></span>
   <span class="cursor" data-cursorDisplay="|" data-owner="main"></span>
           
         </h1>
