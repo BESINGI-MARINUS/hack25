@@ -204,7 +204,7 @@ header .container {
   position: fixed;
   top: 0;
   right: -100%;
-  width: 40%;
+  width: 50%;
   height: 100vh;
   background: white;
   box-shadow: -2px 0 5px rgba(0,0,0,0.1);
