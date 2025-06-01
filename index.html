@@ -9,6 +9,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
       rel="stylesheet"
     />
+    <script defer src="https://unpkg.com/typer-dot-js@0.1.0/typer.js"></script>
     <script defer src="./script.js"></script>
   </head>
   <body>
@@ -43,7 +44,9 @@
           Proudly Serving Cameroon
         </div>
         <h1 class="hero-title">
-          Connect. Learn. <span class="text-primary">Grow.</span>
+          <span class="typer" id="main" data-words="Connect. Learn. Grow." data-delay="100" data-deleteDelay="1000" data-colors="#1f2937,#2563eb"></span>
+  <span class="cursor" data-cursorDisplay="|" data-owner="main"></span>
+          
         </h1>
         <p class="hero-description">
           The premier platform connecting aspiring tech talent with mentors, job
@@ -67,19 +70,19 @@
       <div class="container">
         <div class="stats-grid">
           <div class="stat-item">
-            <div class="stat-number">500+</div>
+            <div class="stat-number"><span data-count="500">500</span>+</div>
             <div class="stat-label">Active Mentors</div>
           </div>
           <div class="stat-item">
-            <div class="stat-number">1,200+</div>
+            <div class="stat-number"><span data-count="1200">1,200</span>+</div>
             <div class="stat-label">Students Helped</div>
           </div>
           <div class="stat-item">
-            <div class="stat-number">300+</div>
+            <div class="stat-number"><span data-count="300">300</span>+</div>
             <div class="stat-label">Job Placements</div>
           </div>
           <div class="stat-item">
-            <div class="stat-number">150+</div>
+            <div class="stat-number"><span data-count="150">150</span>+</div>
             <div class="stat-label">Partner Companies</div>
           </div>
         </div>
@@ -262,7 +265,7 @@
           </div>
         </div>
         <div class="footer-bottom">
-          <p>&copy; 2024 TechConnect CM. All rights reserved.</p>
+          <p>Built with much 💓, TechConnect CM</p>
         </div>
       </div>
     </footer>

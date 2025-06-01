@@ -862,6 +862,8 @@ class TechConnectMarketplace {
   }
 }
 
+
+
 // Initialize the marketplace when DOM is loaded
 document.addEventListener("DOMContentLoaded", () => {
   new TechConnectMarketplace();
